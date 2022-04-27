@@ -1,7 +1,9 @@
 const svg = document.querySelector("svg");
 let target = undefined;
+
 //andere Möglichkeit um Kontextmenü zu unterdrücken
-//svg.oncontextmenu = () => false;
+svg.oncontextmenu = () => false;
+
 svg.addEventListener("click", (event) => {
     console.log(event);
 
